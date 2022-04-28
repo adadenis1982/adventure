@@ -2,7 +2,7 @@ Adventure
 
 Это Express JS сайт для поиска приключений.
 
-
+Используется JS, HTML, CSS, Node.js, Express, PostgreSQL и Handlebars.
 
 Использовать npm i && npm start чтобы запустить приложение.
 
