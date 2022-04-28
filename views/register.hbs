@@ -1,0 +1,47 @@
+<div class='form_sign'>
+  <div class='form_contact_info'>
+    <div class='form_contact_content'>
+      <form id='register' class='form_group'>
+        <input
+          type='text'
+          class='form-control'
+          name='name'
+          placeholder='Name'
+          required
+        />
+        <input
+          type='email'
+          class='form-control'
+          name='email'
+          placeholder='Email'
+          required
+        />
+        <input
+          type='password'
+          class='form-control'
+          id="inputPassword"
+          name='password'
+          placeholder='Password'
+          minlength='8'
+          required
+        />
+        <input
+          type='password'
+          class='form-control'
+          id="inputConfirmPassword"
+          name='ConfirmPassword'
+          placeholder='Confirm password'
+          minlength='8'
+          required
+        />
+        <div id='feedback' class='invalid-feedback'></div>
+        <div class='sign'>
+          <button type='submit' class='button_default'>SIGN UP</button>
+          <a href='/'>HOME</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script defer src='/js/register.js'></script>

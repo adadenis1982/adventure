@@ -1,0 +1,30 @@
+<div class='form_sign'>
+  <div class='form_contact_info'>
+    <div class='form_contact_content'>
+      <form id='login' class='form_group'>
+        <input
+          type='email'
+          class='form-control'
+          name='email'
+          placeholder='Email'
+          required
+        />
+        <input
+          type='password'
+          class='form-control'
+          name='password'
+          placeholder='Password'
+          minlength='8'
+          required
+        />
+        <div id='feedback' class='invalid-feedback'></div>
+        <div class='sign'>
+          <button type='submit' class='button_default'>SIGN IN</button>
+          <a href='/register'>SIGN UP</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script defer src='/js/login.js'></script>

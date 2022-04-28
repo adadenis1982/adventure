@@ -1,0 +1,35 @@
+<div class='profile'>
+  <div class='profile_content'>
+    <div class='profile_hi'>
+      <h2>Welcome you {{auth.username}}!</h2>
+    </div>
+    <div class='profile_message'>
+      {{#if message}}
+        <h2>You messages:</h2>
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Message</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          {{#each message}}
+            <tbody>
+              <tr>
+                <td>{{this.subject}}</td>
+                <td>{{this.message}}</td>
+                <td>{{this.createdAt}}</td>
+              </tr>
+            </tbody>
+          {{/each}}
+        </table>
+      {{else}}
+        <h2>You didn't send messages</h2>
+      {{/if}}
+    </div>
+    <div class='sign'>
+      <a href='/'>HOME</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,258 @@
+<div class='main'>
+  <div class='content'>
+
+    <!--header Section -->
+    <div class='header'>
+
+      <!--navbar Section -->
+      <div class='navbar'>
+        <div class='container'>
+          <div class='navbar_body'>
+            <div class='navbar_logo'>
+              <img src='/image/logo.png' alt='logo' />
+            </div>
+            <div class="navbar_burger">
+              <span></span>
+            </div>
+            <nav class='navbar_menu'>
+              <ul class='navbar_list'>
+                <li><a class='active active_default' href='home'>HOME</a></li>
+                <li><a class='active' href='about'>ABOUT US</a></li>
+                <li><a class='active' href='form'>CONTACT</a></li>
+                <li><a class='active' href='trial'>TRIAL</a></li>
+                {{#if auth}}
+                  <li><a class='active' href='home/logout'>LOGOUT</a></li>
+                  <li><a class='active' href='profile'>PROFILE</a></li>
+                {{else}}
+                  <li><a class='active' href='login'>LOGIN</a></li>
+                {{/if}}
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!--End of navbar -->
+
+      <!--home Section -->
+      <div id='home' class='home'>
+        <div class='home_content_button'>
+          <button id='slider_prev'><i
+              class='fa fa-angle-left'
+              style='display: block;'
+            ></i></button>
+        </div>
+        <div class='home_content'>
+          <h3>Our Clients Are Our First Priority</h3>
+          <h1>WELCOME TO BINO</h1>
+          <div class='separator'></div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.</p>
+          <div>
+            <button type='button' class='button_default'>GET STARTED NOW</button>
+            <button type='button'>LEARN MORE</button>
+          </div>
+          <div class='scrooldown'>
+            <a id='scrooldown' href='#'><i class='fa fa-arrow-down'></i></a>
+          </div>
+        </div>
+        <div class='home_content_button'>
+          <button id='slider_next'><i
+              class='fa fa-angle-right nextprevright slick-arrow'
+              style='display: block;'
+            ></i></button>
+        </div>
+      </div>
+      <!--End of home section -->
+
+    </div>
+    <!--End of header section -->
+
+    <!--Sleek design Section -->
+    <div class='sleek_design'>
+      <div class='sleek_design_info'>
+        <div class='sleek_design_icon'>
+          <i class='fa fa-clone'></i>
+        </div>
+        <h4>SLEEK DESIGN</h4>
+        <div class='separator2'></div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting let.
+          Lorem Ipsum has been the industry.</p>
+      </div>
+      <div class='sleek_design_info'>
+        <div class='sleek_design_icon'>
+          <i class='fa fa-heart-o'></i>
+        </div>
+        <h4>CLEAN CODE</h4>
+        <div class='separator2'></div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting let.
+          Lorem Ipsum has been the industry.</p>
+      </div>
+      <div class='sleek_design_info'>
+        <div class='sleek_design_icon'>
+          <i class='fa fa-lightbulb-o'></i>
+        </div>
+        <h4>CREATIVE IDEAS</h4>
+        <div class='separator2'></div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting let.
+          Lorem Ipsum has been the industry.</p>
+      </div>
+      <div class='sleek_design_info'>
+        <div class='sleek_design_icon'>
+          <i class='fa fa-comments-o'></i>
+        </div>
+        <h4>FREE SUPPORT</h4>
+        <div class='separator2'></div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting let.
+          Lorem Ipsum has been the industry.</p>
+      </div>
+    </div>
+    <!--End of Sleek design section -->
+
+    <!--About Section -->
+    <div id='about' class='about_us scrollto'>
+      <div class='about_us_service'>
+        <div class='about_us_service_title'>
+          <h2>OUR SERVICES</h2>
+        </div>
+        <div class='about_us_service_text'>
+          <article class='about_us_service_right_text'>
+            <h4>WEB DESIGN</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ip sum has been the industry's standard dummy text
+              ever.
+            </p>
+          </article>
+          <figure class='about_us_service_icon'>
+            <i class='fa fa-heart'></i>
+          </figure>
+        </div>
+        <div class='about_us_service_text'>
+          <article class='about_us_service_right_text'>
+            <h4>PRINT DESIGN</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ip sum has been the industry's standard dummy text
+              ever.
+            </p>
+          </article>
+          <figure class='about_us_service_icon'>
+            <i class='fa fa-heart'></i>
+          </figure>
+        </div>
+        <div class='about_us_service_text'>
+          <article class='about_us_service_right_text'>
+            <h4>PHOTOGRAPHY</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ip sum has been the industry's standard dummy text
+              ever.
+            </p>
+          </article>
+          <figure class='about_us_service_icon'>
+            <i class='fa fa-heart'></i>
+          </figure>
+        </div>
+      </div>
+      <div class='about_us_image'>
+        <img src='/image/service.jpg' alt='service' />
+      </div>
+    </div>
+    <!--End of About section -->
+
+    <!--form Section -->
+    <div id='form' class='form_keep_in_touch'>
+      <div class='form_title'>
+        <h2>KEEP IN TOUCH</h2>
+        <div class='subtitle'>
+          Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna
+          suscipit, dictum quam nec.
+        </div>
+        <div class='separator'></div>
+      </div>
+      <div class='form_contact_info'>
+        <div class='form_contact_content'>
+          <div class='form_contact_text'>
+            <h3>OUR ADDRESS</h3>
+            <h4>House #13, Streat road, Sydney 2310 Australia</h4>
+          </div>
+          <div class='form_contact_text'>
+            <h3>CALL US</h3>
+            <h4>+ 880 168 109 1425</h4>
+            <h4>+ 0216809142</h4>
+          </div>
+          <div class='form_contact_text'>
+            <h3>EMAIL US</h3>
+            <h4>contactus@email.com</h4>
+          </div>
+        </div>
+        <div class='form_contact_content'>
+          <form id='form_message' class='form_group'>
+            <input
+              type='text'
+              class='form-control'
+              name='name'
+              placeholder='Name'
+              required
+            />
+            <input
+              type='email'
+              class='form-control'
+              name='email'
+              placeholder='Email'
+              required
+            />
+            <input
+              type='text'
+              class='form-control'
+              name='subject'
+              placeholder='Subject'
+              required
+            />
+            <textarea
+              class='form-control'
+              name='message'
+              rows='5'
+              placeholder='Message'
+            ></textarea>
+            <div id='feedback' class='invalid-feedback'></div>
+            <button type='submit' class='button_default'>SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--End of form section -->
+
+    <!--last Section -->
+    <div id='trial' class='trial'>
+      <div class='trial_content'>
+        <h2>Let's Get Started Now. <span>It's FREE!</span></h2>
+        <h4>30 day free trial. Free plan allows up to 2 projects. Pay if you
+          need more. Cancel anytime. No catches.</h4>
+        <button type='button' class='button_default'>Start free trial</button>
+      </div>
+      <div class='scroolup'>
+        <a id='scroolup' href='#'><i class='fa fa-arrow-up'></i></a>
+      </div>
+    </div>
+    <!--End of last section -->
+
+  </div>
+
+  <!--footer Section -->
+  <footer class='footer'>
+    <div class='footer_row'>
+      <a href='#'><i class='fa fa-facebook'></i></a>
+      <a href='#'><i class='fa fa-twitter'></i></a>
+      <a href='#'><i class='fa fa-google-plus'></i></a>
+      <a href='#'><i class='fa fa-instagram'></i></a>
+      <a href='#'><i class='fa fa-youtube'></i></a>
+      <a href='#'><i class='fa fa-dribbble'></i></a>
+    </div>
+    <div class='footer_text'>
+      ADVENTURER 2022. All Rights
+    </div>
+  </footer>
+  <!--End of footer section -->
+</div>
+
+<script defer src='/js/home.js'></script>
